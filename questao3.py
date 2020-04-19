@@ -1,4 +1,4 @@
-def isEditDistanceOne(first, second):
+def CombinacaoPalavras(first, second):
     firstLength = len(first)
     secondLength = len(second)
 
@@ -31,23 +31,24 @@ def isEditDistanceOne(first, second):
         count = count + 1
 
     return count == 1
+
 def main():
-    if isEditDistanceOne("pale", "ple"):
+    if CombinacaoPalavras("pale", "ple"):
         print("Yes")
     else:
         print("No")
 
-    if isEditDistanceOne("pales", "pale"):
+    if CombinacaoPalavras("pales", "pale"):
         print("Yes")
     else:
         print("No")
 
-    if isEditDistanceOne("pale", "bale"):
+    if CombinacaoPalavras("pale", "bale"):
         print("Yes")
     else:
         print("No")
 
-    if isEditDistanceOne("pale", "bake"):
+    if CombinacaoPalavras("pale", "bake"):
         print("Yes")
     else:
         print("No")
